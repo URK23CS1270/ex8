@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Membership Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🏋️ Gym Membership Management</h1>
+
+  <div class="card">
+    <h2>Add New Member</h2>
+    <input type="text" id="name" placeholder="Full Name" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="text" id="type" placeholder="Membership Type (Monthly/Yearly)" required><br>
+    <button onclick="addMember()">Add Member</button>
+  </div>
+
+  <div class="card">
+    <h2>All Members</h2>
+    <button onclick="fetchMembers()">Refresh List</button>
+    <ul id="memberList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
